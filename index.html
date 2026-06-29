@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DaVinci — Portfolio</title>
+  <meta name="description" content="Portfolio de Tu Nombre, desarrollador/a en formación. Proyectos en HTML, CSS, JavaScript y Python." />
+  <link rel="icon" href="media/image-removebg-preview.png" type="image/x-icon" />
+
+  <!-- Tipografías: Space Grotesk (títulos), Inter (texto), IBM Plex Mono (detalles tipo código) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================== HEADER: barra de "pestañas de editor" ===================== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#inicio" class="logo">&lt;DaVinci/&gt;</a>
+
+      <nav class="tabs" aria-label="Navegación principal">
+        <a href="#inicio" class="tab tab--active" data-lang="html">
+          <span class="tab__dot"></span>INICIO
+        </a>
+        <a href="#proyectos" class="tab" data-lang="js">
+          <span class="tab__dot"></span>PROYECTOS
+        </a>
+        <a href="#habilidades" class="tab" data-lang="py">
+          <span class="tab__dot"></span>HABILIDADES
+        </a>
+        <a href="#contacto" class="tab" data-lang="md">
+          <span class="tab__dot"></span>CONTACTO
+        </a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema">
+          <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="4.5"></circle>
+            <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"></path>
+          </svg>
+        </button>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navegación móvil">
+      <a href="#inicio" class="mobile-menu__link">INICIO</a>
+      <a href="#proyectos" class="mobile-menu__link">PROYECTOS</a>
+      <a href="#habilidades" class="mobile-menu__link">HABILIDADES</a>
+      <a href="#contacto" class="mobile-menu__link">CONTACTO</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero">
+      <div class="section__inner hero__inner">
+        <p class="hero__hello">Hola, soy <strong>Leonardo Andrés Hernández Hernández</strong></p>
+        <h1 class="hero__title">
+          Construyo interfaces en el navegador<br />
+          y lógica del lado del servidor.
+        </h1>
+        <p class="hero__lead">
+          Estudiante de desarrollo de software enfocado en Backend.
+          Este es mi espacio para mostrar proyectos reales mientras avanzo hacia un perfil profesional.
+        </p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+        </div>
+
+        <dl class="hero__stats">
+          <div class="hero__stat">
+            <dt>proyectos</dt>
+            <dd id="stat-proyectos">—</dd>
+          </div>
+          <div class="hero__stat">
+            <dt>estado</dt>
+            <dd>Disponible para prácticas</dd>
+          </div>
+        </dl>
+
+        <!-- ============ TECNOLOGÍAS ============ -->
+        <p class="tech-carousel__heading">Conocimientos en</p>
+        <div class="tech-carousel">
+          <div class="tech-carousel__slide">
+            <div class="tech-carousel__icon">
+              <img src="media/html.png" alt="HTML" loading="lazy">
+            </div>
+            <span class="tech-carousel__label">HTML</span>
+          </div>
+          <div class="tech-carousel__slide">
+            <div class="tech-carousel__icon">
+              <img src="media/CSS.png" alt="CSS" loading="lazy">
+            </div>
+            <span class="tech-carousel__label">CSS</span>
+          </div>
+          <div class="tech-carousel__slide">
+            <div class="tech-carousel__icon">
+              <img src="media/javascript-logo-3.webp" alt="JavaScript" loading="lazy">
+            </div>
+            <span class="tech-carousel__label">JavaScript</span>
+          </div>
+          <div class="tech-carousel__slide">
+            <div class="tech-carousel__icon">
+              <img src="media/py.png" alt="Python" loading="lazy">
+            </div>
+            <span class="tech-carousel__label">Python</span>
+          </div>
+          <div class="tech-carousel__slide">
+            <div class="tech-carousel__icon">
+              <img src="media/SQL.png" alt="MySQL" loading="lazy">
+            </div>
+            <span class="tech-carousel__label">MySQL</span>
+          </div>
+          <div class="tech-carousel__slide">
+            <div class="tech-carousel__icon">
+              <img src="media/n8n.png" alt="n8n" loading="lazy">
+            </div>
+            <span class="tech-carousel__label">n8n</span>
+          </div>
+          <div class="tech-carousel__slide">
+            <div class="tech-carousel__icon">
+              <img src="media/git.png" alt="Git" loading="lazy">
+            </div>
+            <span class="tech-carousel__label">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section id="proyectos" class="section">
+      <div class="section__inner">
+        <h2 class="section__title">Cosas que he construido</h2>
+        <p class="section__lead">
+          Estos son los proyectos que he desarrollado en mi proceso de formación, ya sea de manera individual o en colaboración con otros. Cada proyecto refleja mi aprendizaje y crecimiento como desarrollador.
+        </p>
+
+        <div id="proyectos-grid" class="projects-grid">
+          <!-- Las tarjetas se generan dinámicamente con JavaScript -->
+        </div><br><br>
+
+        <p class="section__lead">
+          Estos no son todos mis proyectos, pero son los que considero más representativos al momento de demostrar mis habilidades y conocimientos actuales y mi capacidad de desarrollar soluciones efectivas y creativas.
+        </p>
+
+        <noscript>
+          <p>Activá JavaScript para ver la lista de proyectos.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section id="habilidades" class="section section--alt">
+      <div class="section__inner">
+        <h2 class="section__title">Stack actual</h2>
+
+        <div class="skills-grid">
+          <div class="skills-col">
+            <h3 class="skills-col__title"><span class="dot dot--js"></span>Frontend</h3>
+            <ul class="skills-list" id="skills-frontend">
+              <!-- Generado por JavaScript -->
+            </ul>
+          </div>
+
+          <div class="skills-col">
+            <h3 class="skills-col__title"><span class="dot dot--py"></span>Backend / Datos</h3>
+            <ul class="skills-list" id="skills-backend">
+              <!-- Generado por JavaScript -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section id="sobre-mi" class="section">
+      <div class="section__inner about">
+        <h2 class="section__title">Sobre mí</h2>
+
+        <div class="about__grid">
+          <div class="about__photo" aria-hidden="true" id="imagen">
+            <span><img src="media/WhatsApp Image 2026-06-25 at 15.03.02.jpeg" alt="Imagen De Presentaicon" id="imagen_personal"></span>
+          </div>
+          <p class="about__text">
+            Soy Leonardo Hernández, desarrollador de software con conocimientos en Python, HTML, CSS, JavaScript, MySQL, Git, GitHub, n8n, herramientas de inteligencia artificial y Prompt Engineering. Actualmente continúo fortaleciendo mis habilidades con el aprendizaje del framework SDD. Me caracterizo por mi capacidad de aprendizaje, adaptabilidad, trabajo en equipo y comunicación efectiva, disfrutando aportar ideas e impulsar soluciones innovadoras que generen valor.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="section section--alt">
+      <div class="section__inner">
+        <h2 class="section__title">Hablemos</h2>
+        <p class="section__lead">
+          ¿Tenés una oportunidad, una práctica o simplemente querés comentar un proyecto?
+          Escribime por cualquiera de estos medios.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:lehernan.07@gmail.com" class="contact-row">
+              <span class="contact-row__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+              </span>
+              <span class="contact-row__label">Correo Electrónico</span>
+              <span class="contact-row__arrow">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Leonardo4516" class="contact-row" target="_blank" rel="noopener">
+              <span class="contact-row__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.7-4.58 4.94.36.31.68.93.68 1.87v2.78c0 .26.18.57.69.48A10 10 0 0 0 12 2Z"></path></svg>
+              </span>
+              <span class="contact-row__label">GitHub</span>
+              <span class="contact-row__arrow">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/leonardo-hern%C3%A1ndez-2a6a66389/" class="contact-row" target="_blank" rel="noopener">
+              <span class="contact-row__icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 10v7M7 7.5v.01M12 17v-4.5c0-1.5 1-2.5 2.5-2.5S17 11 17 12.5V17"></path></svg>
+              </span>
+              <span class="contact-row__label">LinkedIn</span>
+              <span class="contact-row__arrow">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section__inner footer__inner">
+      <p>© <span id="year"></span> Leonardo Hernández</p>
+      <a href="#inicio" class="footer__top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
