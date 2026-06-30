@@ -272,12 +272,6 @@ Sube todos los archivos vía FTP, SCP, o panel de control a cualquier hosting qu
 
 ---
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
----
-
 <div align="center">
 
 **Hecho con ❤️ y código vanilla — sin frameworks, sin atajos, sin dependencias.**
