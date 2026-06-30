@@ -66,13 +66,6 @@ open index.html   # macOS
 xdg-open index.html  # Linux
 start index.html  # Windows
 ```
-
-### Capturas de pantalla
-
-| Modo Oscuro (por defecto) | Modo Claro |
-|:---:|:---:|
-| *[Agregar captura]* | *[Agregar captura]* |
-
 ---
 
 ## 🛠 Stack Técnico
